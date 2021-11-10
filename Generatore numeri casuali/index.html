@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Diego" />
+    <meta name="description" content="Descrizione" />
+    <link
+      rel="shortcut icon"
+      href="icon.ico"
+      sizes="114x114"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Generatore di numeri casuali</title>
+  </head>
+  <body>
+    <header><h1>Generatore di numeri casuali</h1></header>
+    <main>
+      <div class="counter-block">
+        <h2>Risultato</h2>
+        <p class="number-display"></p>
+        <div class="buttons">
+          <button class="generatore">Genera!</button>
+
+          <label for="limite-inferiore">Limite inferiore?</label>
+          <input
+            type="number"
+            name="limite-inferiore"
+            id="limite-inferiore"
+            value="1"
+          />
+
+          <label for="limite-superiore">Limite superiore?</label>
+          <input
+            type="number"
+            name="limite-superiore"
+            id="limite-superiore"
+            value="203"
+          />
+        </div>
+      </div>
+      <div class="sezione-impostazioni">
+        <button class="impostazioni">Impostazioni</button>
+        <br />
+        <label for="numeri-esclusi" class="hidden" id="titolo-textarea"
+          >Numeri da escludere.</label
+        >
+        <p class="hidden" , id="esclusi-p">
+          I numeri DEVONO essere separati andando a capo
+        </p>
+        <textarea
+          class="hidden"
+          id="numeri-esclusi"
+          name="numeri-esclusi"
+          rows="20"
+          cols="15"
+        ></textarea>
+        <button class="hidden" , id="save-button">
+          Salva i numeri inseriti
+        </button>
+        <p class="hidden" , id="save-p">
+          così persisteranno alla prossima apertura del browser
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+/* BASIC STYLES */
+
+body {
+  background-color: #ffd4d4;
+  font-family: "Montserrat", sans-serif;
+  display: relative;
+}
+
+h1 {
+  margin: 1rem 0 0 2rem;
+  font-size: 300%;
+  color: #767b91;
+}
+
+div.counter-block {
+  width: 30%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.2rem solid #ffc53d50;
+  box-shadow: 0 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  justify-self: auto;
+  font-size: 250%;
+  color: #5e6274;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+p.number-display {
+  font-size: 750%;
+  text-justify: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+p.number-display.positive {
+  color: green;
+}
+
+p.number-display.negative {
+  color: red;
+}
+
+label {
+  justify-self: auto;
+  font-size: 150%;
+  color: #464955;
+  margin-top: 1rem;
+  margin-bottom: auto;
+}
+
+div.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+button {
+  display: inline-block;
+  background-color: #5e6274;
+  color: whitesmoke;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  outline: none;
+}
+
+button {
+  margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: #5e7463;
+}
+
+button:focus {
+  background-color: #5e7463;
+}
+
+button:active {
+  transform: translateY(4%);
+}
+
+div.counter-block input {
+  padding: 0.6rem;
+  font-size: 150%;
+  border-radius: 0.3rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.2);
+  background-color: #f5dedeb2;
+}
+
+div.counter-block input:hover {
+  background-color: #cebebe;
+}
+
+div.counter-block input:focus {
+  background-color: #cebebe;
+}
+
+div.sezione-impostazioni {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4%;
+  left: 75%;
+}
+
+div.sezione-impostazioni .hidden {
+  visibility: hidden;
+}
+
+div.sezione-impostazioni p {
+  font-size: 120%;
+  color: #5e6274;
+}
+
+textarea {
+  font-size: 140%;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
